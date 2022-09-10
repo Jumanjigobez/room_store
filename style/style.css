@@ -1,0 +1,250 @@
+:root{
+	--Dark-Gray: hsl(0, 0%, 63%);
+	--Black: hsl(0, 0%, 0%);
+	--White: hsl(0, 0%, 100%);
+	--Very-Dark-Gray: hsl(0, 0%, 27%);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'League Spartan', sans-serif;
+}
+#header{
+	display: flex;
+	flex-direction: row;
+	min-height: 25rem;
+}
+.menu_part{
+	flex-basis: 60%;
+	background: rgba(0,0,0,0.4) url("../images/desktop-image-hero-1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-blend-mode: lighten;
+	padding: 3rem;
+	display: flex;
+	flex-direction: row;
+
+}
+.logo{
+	flex-basis: 20%;
+}
+.menu{
+	flex-basis: 50%;
+}
+#menu li{
+	list-style-type: none;
+	display: inline-block;
+	color: var(--White);
+	text-transform: lowercase;
+	padding: 0rem 0.2rem;
+	cursor: pointer;
+	position: relative;
+}
+#menu li:after{
+	content: "";
+	width: 0;
+	height: 10%;
+	background-color: var(--White);
+	border-radius: 6px;
+	position: absolute;
+	top: 120%;
+	left: 30%;
+	transition: 0.2s linear;
+}
+#menu li:hover:after{
+	width: 30%;
+	left: 30%;
+}
+
+.info_part{
+	flex-basis: 40%;
+	
+
+}
+.info{
+	padding: 5rem 2rem 0rem 5rem;
+}
+.info h2{
+	font-weight: 700;
+
+}
+.info p{
+	margin-top: 15px;
+	margin-bottom: 20px;
+	color: var(--Dark-Gray);
+	line-height: 1.2rem;
+}
+
+.info a{
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	color: var(--Black);
+	transition: 0.2s linear;
+}
+.info a:hover{
+	color: var(--Very-Dark-Gray);
+}
+
+.btn{
+	border: none;
+	border-radius: 0;
+	background-color: var(--Black);
+	padding: 1rem;
+	margin-top: 18px;
+	cursor: pointer;
+	transition: 0.2s linear;
+}
+.btn:hover{
+	background-color: var(--Very-Dark-Gray);
+}
+@media (min-width: 1400px){
+	.btn{
+		margin-top: 5rem;
+	}
+}
+
+/*About section*/
+#about{
+	display: flex;
+	flex-direction: row;
+}
+#about .part_1{
+	flex-basis: 30%;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#about .part_1 img{
+	width: 100%;
+	height: 100;
+}
+#about .part_2{
+	flex-basis: 40%;
+	padding: 2rem;
+}
+#about .part_2 h2{
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: 5px;
+}
+#about .part_2 p{
+	font-size: 12px;
+	color: var(--Dark-Gray);
+	margin-top: 10px;
+	line-height: 1rem;
+}
+#about .part_3{
+	flex-basis: 30%;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#about .part_3 img{
+	width: 100%;
+	height: 100;
+}
+
+/*footer part*/
+#footer{
+	text-align: center;
+	margin-top: 2px;
+
+}
+#footer a{
+	text-decoration: none;
+	color: var(--Black);
+	transition: 0.2s linear;
+}
+#footer a:hover{
+	color: var(--Dark-Gray);
+}
+
+.menu_btn{
+	display: none;
+}
+/* Mobile Viewers*/
+
+@media (max-width: 375px){
+	#header{
+		flex-direction: column;
+		min-height: 25rem;
+	}
+	.menu_part{
+		flex-basis: 60%;
+		background: rgba(0,0,0,0.4) url("../images/mobile-image-hero-1.jpg");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-blend-mode: lighten;
+		padding: 2rem 3rem;
+		display: flex;
+		flex-direction: row-reverse;
+		min-height: 20rem;
+		position: relative;
+	}
+	.logo img{
+		margin-left: -6rem;
+	}
+	.menu_btn{
+		display: block;
+		margin-left: -6rem;
+		width: 25%;
+		z-index: 999999!important;
+	}
+	.menu_btn img{
+		z-index: 999999!important;
+		width: 60%;
+		position: relative;
+	}
+	#menu{
+		display: none;
+		background-color: var(--White);
+		color: var(--Black);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 5rem;
+		text-align: center;
+		padding-left: 1.8rem;
+		box-shadow: 100px 0px 100px 1000px rgb(0,0,0,0.7);
+		z-index: 100!important;
+	}
+	#menu li{
+		display: inline-block;
+		color: var(--Black);
+		margin-top: 2.3rem;
+		padding-left: 1.5rem;
+		font-weight: 700;
+
+	}
+	#menu li:after{
+		background-color: var(--Black);
+		left: 50%;
+	}
+	#menu li:hover:after{
+		left: 50%;
+	}
+
+
+	.info_part{
+		position: relative;
+	}
+	.info{
+		padding: 4rem 0.2rem 0rem 2rem;
+	}
+	.buttons{
+		position: absolute;
+    	top: -15%;
+    	left: 73%;
+	}
+
+	#about{
+		margin-top: 4rem;
+		flex-direction: column;
+	}
+}

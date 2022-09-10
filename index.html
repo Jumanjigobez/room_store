@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Room Furnitures | Room homepage</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+
+  <main>
+    <header id="header">
+      <div class="menu_part">
+        <div class="logo">
+          <img src="images/logo.svg" alt="room logo name">
+        </div>
+        <nav class="menu">
+          <div class="menu_btn">
+            <img src="images/icon-hamburger.svg" alt="menu open button" onclick="openMenu()">
+          </div>
+          <ul id="menu">
+            <li>Home</li>
+            <li>Shop</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="info_part">
+        <div class="info">
+          <h1>Discover innovative ways to decorate</h1>
+          <p>We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.</p>
+          <a href="#">Shop now <img src="images/icon-arrow.svg" alt="shop now button"></a>
+        </div>
+        <div class="buttons">
+          <button class="btn"><img src="images/icon-angle-left.svg" alt="left arrow button"></button>
+          <button class="btn" onclick="nextChange_1()"><img src="images/icon-angle-right.svg" alt="right arrow button"></button>
+        </div>
+      </div>
+    </header>
+
+    <section id="about">
+      <div class="part_1">
+        <img src="images/image-about-dark.jpg" alt="Image showing a dark room setup">
+      </div>
+
+      <div class="part_2">
+        <h2>About our furniture</h2>
+        <p> Our multifunctional collection blends design and function to suit your individual taste.Make each room unique, or pick a cohesive theme that best express your interests and whatinspires you. Find the furniture pieces you need, from traditional to contemporary stylesor anything in between. Product specialists are available to help you create your dream space.</p>
+      </div>
+
+      <div class="part_3">
+        <img src="images/image-about-light.jpg" alt="Image showing a light room setup">
+      </div>
+    </section>
+
+    <footer id="footer">
+      <small>Coded by <a href="https://www.jumanjigobez.github.io/personal_portfolio" target="_blank">Jumanji</a></small>
+    </footer>
+  </main>
+  
+  <script src="script/script.js"></script>
+</body>
+</html>
