@@ -169,7 +169,7 @@
 }
 /* Mobile Viewers*/
 
-@media (max-width: 375px){
+@media (max-width: 600px){
 	#header{
 		flex-direction: column;
 		min-height: 25rem;
